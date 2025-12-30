@@ -76,6 +76,17 @@
         }
 
     </script>
+
+    <script>
+googletag.cmd.push(function () {
+  googletag.pubads().enableLazyLoad({
+    fetchMarginPercent: 300,
+    renderMarginPercent: 150,
+    mobileScaling: 2.0
+  });
+});
+</script>
+
     <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
 
     <script>
@@ -119,6 +130,28 @@
     </script>
 
     <style>
+
+        .ad-bottom {
+  width: 100% !important;
+  min-height: 250px !important;
+  text-align: center !important;
+  margin: 20px auto !important;
+}
+
+.ad-slot {
+  width: 100% !important;
+  min-height: 250px !important;
+  margin: auto !important;
+}
+
+/* Mobile safety */
+@media (max-width: 768px) {
+  .ad-bottom,
+  .ad-slot {
+    min-height: 200px !important;
+  }
+}
+
         .ad-container {
             width: 100% !important;
             margin: 12px auto !important;
@@ -542,6 +575,7 @@
                     googletag.display('div-gpt-ad-1766483435254-0');
                 });
             </script>
+
 
             <div class="s_box">
                 <h3 class="title grey">Recommended Games</h3>
